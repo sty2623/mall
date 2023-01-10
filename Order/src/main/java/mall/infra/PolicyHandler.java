@@ -17,7 +17,7 @@ import mall.domain.*;
 @Service
 @Transactional
 public class PolicyHandler{
-    @Autowired OrderMgmtRepository orderMgmtRepository;
+    @Autowired OrderRepository orderRepository;
     
     @StreamListener(KafkaProcessor.INPUT)
     public void whatever(@Payload String eventString){}
@@ -32,7 +32,7 @@ public class PolicyHandler{
         
 
         // Sample Logic //
-        OrderMgmt.updateStatus(event);
+        Order.updateStatus(event);
         
 
         
@@ -48,7 +48,7 @@ public class PolicyHandler{
         
 
         // Sample Logic //
-        OrderMgmt.updateStatus(event);
+        Order.updateStatus(event);
         
 
         
@@ -64,7 +64,7 @@ public class PolicyHandler{
         
 
         // Sample Logic //
-        OrderMgmt.updateStatus(event);
+        Order.updateStatus(event);
         
 
         
@@ -80,7 +80,7 @@ public class PolicyHandler{
         
 
         // Sample Logic //
-        OrderMgmt.updateStatus(event);
+        Order.updateStatus(event);
         
 
         

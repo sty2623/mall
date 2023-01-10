@@ -17,7 +17,7 @@ public class DeliveryCancled extends AbstractEvent {
     private Long prodectId;
     private String address;
 
-    public DeliveryCancled(DeliveryMgmt aggregate){
+    public DeliveryCancled(Delivery aggregate){
         super(aggregate);
     }
     public DeliveryCancled(){

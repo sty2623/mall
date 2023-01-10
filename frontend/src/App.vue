@@ -39,62 +39,42 @@
 
                     <v-list-item
                         class="px-2"
-                        key="deliveryMgmts"
-                        to="/deliveryMgmts"
+                        key="deliveries"
+                        to="/deliveries"
                         @click="changeUrl()"
                         color="deep-purple lighten-2"
                         style="font-weight:700;"
                     >
-                        DeliveryMgmt
+                        Delivery
                     </v-list-item>
 
 
 
                     <v-list-item
                         class="px-2"
-                        key="inventoryMgmts"
-                        to="/inventoryMgmts"
+                        key="inventories"
+                        to="/inventories"
                         @click="changeUrl()"
                         color="deep-purple lighten-2"
                         style="font-weight:700;"
                     >
-                        InventoryMgmt
+                        Inventory
                     </v-list-item>
 
 
 
                     <v-list-item
                         class="px-2"
-                        key="orderMgmts"
-                        to="/orderMgmts"
+                        key="orders"
+                        to="/orders"
                         @click="changeUrl()"
                         color="deep-purple lighten-2"
                         style="font-weight:700;"
                     >
-                        OrderMgmt
+                        Order
                     </v-list-item>
 
 
-                    <v-list-item
-                        class="px-2"
-                        key="menuSearches"
-                        to="menuSearches"
-                        @click="changeUrl()"
-                        color="deep-purple lighten-2"
-                        style="font-weight:700;"
-                    >
-                        MenuSearch
-                    </v-list-item>
-                    <v-list-item
-                        class="px-2"
-                        key="orderHistories"
-                        to="orderHistories"
-                        @click="changeUrl()"
-                        color="deep-purple lighten-2"
-                        style="font-weight:700;"
-                    >
-                        OrderHistory
-                    </v-list-item>
 
 
                 </v-list>
@@ -129,16 +109,16 @@
                                             class="mx-auto"
                                             outlined
                                             rounded
-                                            key="deliveryMgmts"
-                                            to="/deliveryMgmts"
+                                            key="deliveries"
+                                            to="/deliveries"
                                             @click="changeUrl()"
                                             color="deep-purple lighten-2"
                                             style="font-weight:500; font-size:20px; padding:15px; border:solid 2px; max-width:250px; overflow:hidden"
                                         >
-                                            DeliveryMgmt
+                                            Delivery
                                         </v-btn>
                                     </template>
-                                    <span>DeliveryMgmt</span>
+                                    <span>Delivery</span>
                                 </v-tooltip>
                             </v-card-actions>
                         </v-card>
@@ -165,16 +145,16 @@
                                             class="mx-auto"
                                             outlined
                                             rounded
-                                            key="inventoryMgmts"
-                                            to="/inventoryMgmts"
+                                            key="inventories"
+                                            to="/inventories"
                                             @click="changeUrl()"
                                             color="deep-purple lighten-2"
                                             style="font-weight:500; font-size:20px; padding:15px; border:solid 2px; max-width:250px; overflow:hidden"
                                         >
-                                            InventoryMgmt
+                                            Inventory
                                         </v-btn>
                                     </template>
-                                    <span>InventoryMgmt</span>
+                                    <span>Inventory</span>
                                 </v-tooltip>
                             </v-card-actions>
                         </v-card>
@@ -201,78 +181,20 @@
                                             class="mx-auto"
                                             outlined
                                             rounded
-                                            key="orderMgmts"
-                                            to="/orderMgmts"
+                                            key="orders"
+                                            to="/orders"
                                             @click="changeUrl()"
                                             color="deep-purple lighten-2"
                                             style="font-weight:500; font-size:20px; padding:15px; border:solid 2px; max-width:250px; overflow:hidden"
                                         >
-                                            OrderMgmt
+                                            Order
                                         </v-btn>
                                     </template>
-                                    <span>OrderMgmt</span>
+                                    <span>Order</span>
                                 </v-tooltip>
                             </v-card-actions>
                         </v-card>
 
-                        <v-card
-                            class="mx-auto"
-                            style="height:300px; width:300px; margin-bottom:20px;"
-                            outlined
-                        >
-                            <v-list-item>
-                                <v-list-item-avatar 
-                                    class="mx-auto"
-                                    size="80"
-                                    style="margin-top:80px;"
-                                ><span class="mdi mdi-apps" style="font-size:60px; color:#9575CD;"></span>
-                                </v-list-item-avatar>
-                            </v-list-item>
-
-                            <v-card-actions>
-                                <v-btn 
-                                    class="mx-auto"
-                                    outlined
-                                    rounded
-                                    key="menuSearches"
-                                    to="/menuSearches"
-                                    @click="changeUrl()"
-                                    color="deep-purple lighten-2"
-                                    style="font-weight:500; font-size:20px; padding:15px;"
-                                >
-                                    MenuSearch
-                                </v-btn>
-                            </v-card-actions>
-                        </v-card>
-                        <v-card
-                            class="mx-auto"
-                            style="height:300px; width:300px; margin-bottom:20px;"
-                            outlined
-                        >
-                            <v-list-item>
-                                <v-list-item-avatar 
-                                    class="mx-auto"
-                                    size="80"
-                                    style="margin-top:80px;"
-                                ><span class="mdi mdi-apps" style="font-size:60px; color:#9575CD;"></span>
-                                </v-list-item-avatar>
-                            </v-list-item>
-
-                            <v-card-actions>
-                                <v-btn 
-                                    class="mx-auto"
-                                    outlined
-                                    rounded
-                                    key="orderHistories"
-                                    to="/orderHistories"
-                                    @click="changeUrl()"
-                                    color="deep-purple lighten-2"
-                                    style="font-weight:500; font-size:20px; padding:15px;"
-                                >
-                                    OrderHistory
-                                </v-btn>
-                            </v-card-actions>
-                        </v-card>
                 </v-row>
             </v-container>
         </v-main>

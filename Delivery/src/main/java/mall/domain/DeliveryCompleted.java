@@ -17,7 +17,7 @@ public class DeliveryCompleted extends AbstractEvent {
     private Long prodectId;
     private String address;
 
-    public DeliveryCompleted(DeliveryMgmt aggregate){
+    public DeliveryCompleted(Delivery aggregate){
         super(aggregate);
     }
     public DeliveryCompleted(){
