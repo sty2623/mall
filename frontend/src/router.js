@@ -5,77 +5,53 @@ import Router from 'vue-router'
 Vue.use(Router);
 
 
-import DeliveryMgmtManager from "./components/listers/DeliveryMgmtCards"
-import DeliveryMgmtDetail from "./components/listers/DeliveryMgmtDetail"
+import DeliveryManager from "./components/listers/DeliveryCards"
+import DeliveryDetail from "./components/listers/DeliveryDetail"
 
-import InventoryMgmtManager from "./components/listers/InventoryMgmtCards"
-import InventoryMgmtDetail from "./components/listers/InventoryMgmtDetail"
+import InventoryManager from "./components/listers/InventoryCards"
+import InventoryDetail from "./components/listers/InventoryDetail"
 
-import OrderMgmtManager from "./components/listers/OrderMgmtCards"
-import OrderMgmtDetail from "./components/listers/OrderMgmtDetail"
+import OrderManager from "./components/listers/OrderCards"
+import OrderDetail from "./components/listers/OrderDetail"
 
-import MenuSearchView from "./components/MenuSearchView"
-import MenuSearchViewDetail from "./components/MenuSearchViewDetail"
-import OrderHistoryView from "./components/OrderHistoryView"
-import OrderHistoryViewDetail from "./components/OrderHistoryViewDetail"
 
 export default new Router({
     // mode: 'history',
     base: process.env.BASE_URL,
     routes: [
             {
-                path: '/deliveryMgmts',
-                name: 'DeliveryMgmtManager',
-                component: DeliveryMgmtManager
+                path: '/deliveries',
+                name: 'DeliveryManager',
+                component: DeliveryManager
             },
             {
-                path: '/deliveryMgmts/:id',
-                name: 'DeliveryMgmtDetail',
-                component: DeliveryMgmtDetail
+                path: '/deliveries/:id',
+                name: 'DeliveryDetail',
+                component: DeliveryDetail
             },
 
             {
-                path: '/inventoryMgmts',
-                name: 'InventoryMgmtManager',
-                component: InventoryMgmtManager
+                path: '/inventories',
+                name: 'InventoryManager',
+                component: InventoryManager
             },
             {
-                path: '/inventoryMgmts/:id',
-                name: 'InventoryMgmtDetail',
-                component: InventoryMgmtDetail
+                path: '/inventories/:id',
+                name: 'InventoryDetail',
+                component: InventoryDetail
             },
 
             {
-                path: '/orderMgmts',
-                name: 'OrderMgmtManager',
-                component: OrderMgmtManager
+                path: '/orders',
+                name: 'OrderManager',
+                component: OrderManager
             },
             {
-                path: '/orderMgmts/:id',
-                name: 'OrderMgmtDetail',
-                component: OrderMgmtDetail
+                path: '/orders/:id',
+                name: 'OrderDetail',
+                component: OrderDetail
             },
 
-            {
-                path: '/menuSearches',
-                name: 'MenuSearchView',
-                component: MenuSearchView
-            },
-            {
-                path: '/menuSearches/:id',
-                name: 'MenuSearchViewDetail',
-                component: MenuSearchViewDetail
-            },
-            {
-                path: '/orderHistories',
-                name: 'OrderHistoryView',
-                component: OrderHistoryView
-            },
-            {
-                path: '/orderHistories/:id',
-                name: 'OrderHistoryViewDetail',
-                component: OrderHistoryViewDetail
-            },
 
 
     ]

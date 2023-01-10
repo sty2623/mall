@@ -16,7 +16,7 @@ public class OrderCancled extends AbstractEvent {
     private Long orderId;
     private String address;
 
-    public OrderCancled(OrderMgmt aggregate){
+    public OrderCancled(Order aggregate){
         super(aggregate);
     }
     public OrderCancled(){
